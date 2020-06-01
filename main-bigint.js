@@ -175,11 +175,10 @@ function converterBigInt(user_value) {
     return "";
   }); // Проверка на допустимость вводимого значения
 
-  /*    if (!TypewriterBigint.checkUserBigInt(user_value)) {
-          return false;
-      }*/
+  if (!_typewriter_bigint_js__WEBPACK_IMPORTED_MODULE_0__["default"].checkUserBigInt(user_value)) {
+    return false;
+  } // Основной код функции.
 
-  document.getElementById("resultBigint").innerText = "-1"; // Основной код функции.
 
   return "".concat(new _typewriter_bigint_js__WEBPACK_IMPORTED_MODULE_0__["default"](user_value));
 }
@@ -313,10 +312,8 @@ var TypewriterBigint = /*#__PURE__*/function (_TypewriterSum) {
 
     _classCallCheck(this, TypewriterBigint);
 
-    document.getElementById("resultBigint").innerText = "5";
     _this = _super.call(this, "RUB", first);
     _this.first = BigInt(first).toString();
-    document.getElementById("resultBigint").innerText = "6";
     return _this;
   }
 

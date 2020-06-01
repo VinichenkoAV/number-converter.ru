@@ -182,6 +182,11 @@ function catchUncaughtDOMException(err) {
 }
 ;
 
+window.onerror = function (msg, url, line) {
+  alert(msg + "\n" + url + "\n" + "\n" + line);
+  return true;
+};
+
 if (!document.location.hash) {
   document.location.hash = "#tab_01";
 }
