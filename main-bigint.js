@@ -302,6 +302,7 @@ var TypewriterBigint = /*#__PURE__*/function (_TypewriterSum) {
 
       try {
         BigInt(user_value);
+        document.getElementById("resultBigint").innerText = "11";
         return true;
       } catch (err) {
         if (err.name === "SyntaxError") {
@@ -316,8 +317,8 @@ var TypewriterBigint = /*#__PURE__*/function (_TypewriterSum) {
 
     _classCallCheck(this, TypewriterBigint);
 
-    _this = _super.call(this, "RUB", first);
     document.getElementById("resultBigint").innerText = "5";
+    _this = _super.call(this, "RUB", first);
     _this.first = BigInt(first).toString();
     document.getElementById("resultBigint").innerText = "6";
     return _this;
