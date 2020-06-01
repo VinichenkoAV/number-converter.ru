@@ -406,5 +406,11 @@ h3 {
   margin: 53px 13px 53px 0;
 }
 
+#infinity {
+  padding-left: 10px;
+  padding-right: 10px;
+  object-fit: contain;
+}
+
 
 /*# sourceMappingURL=main-sum.css.map*/

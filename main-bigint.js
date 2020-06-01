@@ -286,7 +286,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-
+ //import JSBI from "jsbi";
 
 var TypewriterBigint = /*#__PURE__*/function (_TypewriterSum) {
   _inherits(TypewriterBigint, _TypewriterSum);
