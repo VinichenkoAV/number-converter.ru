@@ -298,9 +298,10 @@ var TypewriterBigint = /*#__PURE__*/function (_TypewriterSum) {
   _createClass(TypewriterBigint, null, [{
     key: "checkUserBigInt",
     value: function checkUserBigInt(user_value) {
-      document.getElementById("resultBigint").innerText = "10";
+      document.getElementById("resultBigint").innerText = "100";
 
       try {
+        document.getElementById("resultBigint").innerText = "12";
         BigInt(user_value);
         document.getElementById("resultBigint").innerText = "11";
         return true;
